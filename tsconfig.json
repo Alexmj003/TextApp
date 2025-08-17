@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    // Vue 3 projects typically target modern JavaScript
+    "target": "ES2020",                                  /* Use latest JavaScript features compatible with Vue 3 and modern browsers. */
+    "module": "ESNext",                                  /* Use native ECMAScript modules which align better with modern bundlers like Vite or Webpack. */
+    "moduleResolution": "node",                          /* Match how Node.js resolves modules for compatibility with most tooling. */
+    "jsx": "preserve",                                   /* Preserve JSX syntax (needed if using JSX with Vue's render functions). */
+    "esModuleInterop": true,                             /* Ensure compatibility between CommonJS and ES Modules. */
+    "allowSyntheticDefaultImports": true,                /* Allow default imports from modules without default exports. Required for Vue libraries. */
+    "skipLibCheck": true,                                /* Skip type checking of declaration files (.d.ts) to reduce build time. */
+    "forceConsistentCasingInFileNames": true,            /* Helps catch casing issues when importing files across different systems. */
+    "baseUrl": ".",                                      /* Set base directory for resolving non-relative imports. */
+    "paths": {
+      "@/*": ["src/*"]
+    },                                                   /* Enable alias '@/' to refer to 'src/' — makes importing modules cleaner. */
+    "types": ["vite/client"],                            /* Include Vite’s client types for environment variables and dev server. */
+    "sourceMap": true                                    /* Enable source maps for easier debugging in browser dev tools. */
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue"],            /* Let TypeScript process .ts and .vue files inside /src. */
+  "exclude": ["node_modules", "dist"]                    /* Don’t include dependencies or build output in the TypeScript project. */
+}
