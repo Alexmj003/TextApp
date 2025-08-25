@@ -63,5 +63,3 @@ export function startScheduler() {
     saveScheduledMessages(messages);
   });
 }
-
-export { scheduleJob, startScheduler };
