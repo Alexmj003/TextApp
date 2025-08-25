@@ -4,7 +4,7 @@ import BasePage from './views/BasePage.vue';
 
 <template>
   <div id="app">
-    <BasePage />
+    <RouterView />
   </div>
 </template>
 
